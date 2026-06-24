@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>CSDev - Portfolio</title>
+  </head>
+  <body>
+    <div class="site">
+      <header class="site-header">
+        <div class="container">
+          <h1 class="brand">CSDev</h1>
+          <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#about">Sobre</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contato</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section id="home" class="hero">
+          <div class="container">
+            <div class="hero-text">
+              <h2>Olá, eu sou <span>Cauan Silva</span></h2>
+              <p>
+                Desenvolvedor full-stack em desenvolvimento, onde procuro criar
+                soluções eficientes e escaláveis seja elas no frontend ou
+                backend.
+              </p>
+              <div class="social-links">
+                <a
+                  href="https://github.com/Cauan76"
+                  target="_blank"
+                  title="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/cauanmosilva/?skipRedirect=true"
+                  target="_blank"
+                  title="LinkedIn"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                 <a href="https://www.instagram.com/cauan_dev/"
+                  target="_blank"
+                  title="Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <div class="hero-image">
+              <img src="foto-substituida.png" alt="Cauan Moreira Silva" />
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="container about">
+          <h3>Sobre mim</h3>
+          <p>
+            Estudante técnico em Análise e Desenvolvimento de Sistemas (ADS), em
+            transição de carreira para á área de tecnologia. Possuo
+            conhecimentos básicos em HTML, CSS e JavaScript para desenvolvimento
+            de páginas web, além de fundamentos em Python. Ainda não possuo
+            experiência profissional na área, mas tenho grande interesse em
+            aprender, desenvolver novas habilidades e adquirir experiência
+            prática por meio de oportunidades de estágio. Sou dedicado,
+            organizado e motivado a evoluir constantemente no desenvolvimento de
+            soluções tecnológicas..
+          </p>
+        </section>
+        <section id="skills" class="container skills-section">
+          <h3>Habilidades</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="fab fa-html5 skill-icon"></i>
+              <span>HTML</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-css3-alt skill-icon"></i>
+              <span>CSS</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-js skill-icon"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-python skill-icon"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-git-alt skill-icon"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-bolt skill-icon"></i>
+              <span>FastAPI</span>
+            </div>
+          </div>
+        </section>
+
+        <div class="aside-wrapper container">
+          <aside class="aside-card">
+            <div class="aside-block">
+              <h4><i class="fas fa-futbol"></i> Curiosidades</h4>
+              <ul>
+                <li>
+                  Aos finais de semana, começo o dia jogando bola e depois curto
+                  o tempo com a família, estudo e trabalho de motoboy.
+                </li>
+                <li>
+                  Durante a semana mantenho a rotina na academia,trabalho
+                  (motoboy) e estudo, onde sempre tento aprimorar o que aprendo
+                  em relação a programação.
+                </li>
+              </ul>
+            </div>
+            <div class="aside-divider"></div>
+            <div class="aside-block">
+              <h4><i class="fas fa-handshake"></i> Disponibilidade</h4>
+              <ul>
+                <li>
+                  Aberto a <strong>estágios</strong> na área de tecnologia.
+                </li>
+                <li>
+                  Disponível para <strong>freelancer</strong> e projetos
+                  colaborativos.
+                </li>
+              </ul>
+              <span class="aside-badge"
+                ><i class="fas fa-circle"></i> Disponível agora</span
+              >
+                <div class="social-links">
+                <a
+                  href="https://www.instagram.com/cauan_dev/"
+                  target="_blank"
+                  title="Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/cauanmosilva/?skipRedirect=true"
+                  target="_blank"
+                  title="LinkedIn"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+            </div>
+          </aside>
+        </div>
+
+        <section id="projects" class="container projects-section">
+          <h3>Projetos</h3>
+          <br />
+
+          <input type="radio" name="filter" id="filter-all" checked hidden />
+          <input type="radio" name="filter" id="filter-web" hidden />
+          <input type="radio" name="filter" id="filter-design" hidden />
+          <input type="radio" name="filter" id="filter-app" hidden />
+
+          <div class="filters">
+            <div class="filter-buttons">
+              <label for="filter-all" class="btn">Todos</label>
+              <label for="filter-web" class="btn">Web</label>
+              <label for="filter-design" class="btn">Backend</label>
+            </div>
+          </div>
+
+          <div class="projects">
+            <article class="project" data-cat="design">
+              <a href="#proj2" class="preview">Biblioteca</a>
+              <p class="muted">
+                Realizei uma biblioteca online com Python, Pydantyc e FastAPI
+                 <a href="https://github.com/Cauan76/Biblioteca"
+                  target="_blank"
+                  title="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </p>
+            </article>
+
+            <article class="project" data-cat="web">
+              <a href="#proj4" class="preview">Portifolio
+              </a>
+              <p class="muted">Projeto criado com foco em responsividade, utilizando HTML e CSS puro, como solicitado na atividade da faculdade</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="container contact">
+          <div class="spotify-contact-grid">
+            <div class="spotify-card">
+              <h3>O que estou ouvindo?</h3>
+              <div class="spotify-embed">
+                <iframe
+                  src="https://open.spotify.com/embed/playlist/2lhi59AqdzXtKFponUVbn3"
+                  width="100%"
+                  height="380"
+                  frameborder="0"
+                  allowtransparency="true"
+                  allow="encrypted-media"
+                ></iframe>
+              </div>
+              <p class="muted"></p>
+            </div>
+
+            <div class="contact-form">
+              <h3>Fale Comigo</h3>
+              <form id="contact-form">
+                <input
+                  type="text"
+                  placeholder="Seu Nome"
+                  name="name"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Seu E-mail"
+                  name="email"
+                  required
+                />
+                <textarea
+                  placeholder="Sua Mensagem"
+                  name="message"
+                  rows="6"
+                  required
+                ></textarea>
+                <button class="btn primary" type="submit">
+                  Enviar Mensagem
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <br />
+
+      <footer class="site-footer">
+        <p class="contact-note muted">
+          Quer trabalhar juntos? Envie um e-mail:
+          <a href="mailto:cauan0299@gmail.com" style="color: white !important">
+            cauan0299@gmail.com
+          </a>
+        </p>
+        <div class="container">© 2026 — Cauan Moreira Silva</div>
+      </footer>
+    </div>
+
+    <div id="proj1" class="modal">
+      <div class="modal-content">
+        <a class="close" href="#projects">×</a>
+        <h4>Projeto Web 1</h4>
+        <p>Descrição do projeto web 1. Tecnologias usadas: HTML e CSS puro.</p>
+      </div>
+    </div>
+
+    <div id="proj2" class="modal">
+      <div class="modal-content">
+        <a class="close" href="#projects">×</a>
+        <h4>Biblioteca</h4>
+        <p>Realizei uma biblioteca online com Python, Pydantyc e FastAPI</p>
+      </div>
+    </div>
+
+    <div id="proj4" class="modal">
+      <div class="modal-content">
+        <a class="close" href="#projects">×</a>
+        <h4>Landing Page</h4>
+        <p>Landing responsiva e otimizada apenas com HTML e CSS.</p>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var nome = encodeURIComponent(this.name.value.trim());
+          var email = encodeURIComponent(this.email.value.trim());
+          var mensagem = encodeURIComponent(this.message.value.trim());
+          var assunto = encodeURIComponent("Contato via portfólio - Cauan");
+          var corpo = encodeURIComponent(
+            "Nome: " + nome + "\nEmail: " + email + "\n\nMensagem:" + mensagem,
+          );
+
+          var mailtoLink =
+            "mailto:cauan0299@gmail.com?subject=" + assunto + "&body=" + corpo;
+          window.location.href = mailtoLink;
+        });
+    </script>
+  </body>
+</html>
