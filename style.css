@@ -392,12 +392,10 @@ body::before {
   font-size: 0.9rem;
 }
 
-/* filtros: por padrão mostra todos */
 .projects .project {
   display: block;
 }
 
-/* quando um filtro está ativo, esconder todos e mostrar só os que batem */
 #filter-web:checked ~ .filters ~ .projects .project {
   display: none;
 }
@@ -419,7 +417,6 @@ body::before {
   display: block;
 }
 
-/* destacar botão ativo */
 #filter-web:checked ~ .filters .filter-buttons label[for="filter-web"],
 #filter-design:checked ~ .filters .filter-buttons label[for="filter-design"],
 #filter-app:checked ~ .filters .filter-buttons label[for="filter-app"],
