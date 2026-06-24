@@ -173,7 +173,7 @@
             <article class="project" data-cat="design">
               <a href="#proj2" class="preview">Biblioteca</a>
               <p class="muted">
-                Realizei uma biblioteca online com Python, Pydantyc e FastAPI
+                Realizei uma biblioteca online com Python, Pydantyc e FastAPI (Em desenvolvimento para projeto fullstack)<br>
                  <a href="https://github.com/Cauan76/Biblioteca"
                   target="_blank"
                   title="GitHub"
@@ -185,7 +185,14 @@
             <article class="project" data-cat="web">
               <a href="#proj4" class="preview">Portifolio
               </a>
-              <p class="muted">Projeto criado com foco em responsividade, utilizando HTML e CSS puro, como solicitado na atividade da faculdade</p>
+              <p class="muted">Projeto criado com foco em responsividade, utilizando HTML e CSS puro, como solicitado na atividade da faculdade<br>
+              
+                 <a href="https://github.com/Cauan76/portifolio"
+                  target="_blank"
+                  title="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </p>
             </article>
           </div>
         </section>
@@ -272,25 +279,6 @@
         <p>Landing responsiva e otimizada apenas com HTML e CSS.</p>
       </div>
     </div>
-
-    <script>
-      document
-        .getElementById("contact-form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-
-          var nome = encodeURIComponent(this.name.value.trim());
-          var email = encodeURIComponent(this.email.value.trim());
-          var mensagem = encodeURIComponent(this.message.value.trim());
-          var assunto = encodeURIComponent("Contato via portfólio - Cauan");
-          var corpo = encodeURIComponent(
-            "Nome: " + nome + "\nEmail: " + email + "\n\nMensagem:" + mensagem,
-          );
-
-          var mailtoLink =
-            "mailto:cauan0299@gmail.com?subject=" + assunto + "&body=" + corpo;
-          window.location.href = mailtoLink;
-        });
     </script>
   </body>
 </html>
